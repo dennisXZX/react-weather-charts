@@ -1,6 +1,6 @@
 # React Weather Charts
 
-Powered by create-react-app, Redux, redux-promise, axios, OpenWeatherMap and Bootstrap.
+Powered by create-react-app, React Sparklines, Redux, redux-promise, axios, OpenWeatherMap, Google Map and Bootstrap.
 
 ## Steps
 - run `npm install` to install the dependencies
