@@ -6,7 +6,7 @@ import ReduxPromise from 'redux-promise';
 import registerServiceWorker from './registerServiceWorker';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './index.css';
+import './index.scss';
 
 import App from './App';
 import reducers from './reducers';
