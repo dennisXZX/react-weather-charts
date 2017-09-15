@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchWeather } from "../actions/index";
 
+import './search_bar.scss';
+
 class SearchBar extends Component {
 	constructor(props) {
 		super(props);
@@ -28,21 +30,23 @@ class SearchBar extends Component {
 
 	render() {
 		return (
-			<form onSubmit={this.onFormSubmit} className="input-group">
-				<input
-					placeholder="Get a five-day forecast in your favorite city"
-					className="form-control"
-					value={this.state.term}
-					onChange={this.onInputChange}
-				/>
-				<span className="input-group-btn">
+			<div className="search_bar">
+				<form onSubmit={this.onFormSubmit} className="input-group">
+					<input
+						placeholder="Get a five-day forecast in your favorite city"
+						className="form-control"
+						value={this.state.term}
+						onChange={this.onInputChange}
+					/>
+					<span className="input-group-btn">
 					<button
 						type="submit"
 						className="btn btn-secondary">
 						Submit
 					</button>
 				</span>
-			</form>
+				</form>
+			</div>
 		)
 	}
 }

@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import Chart from '../components/chart';
 import GoogleMap from '../components/google_map';
 
+import "./weather_list.scss";
+
 class WeatherList extends Component {
 
 	renderWeather = (cityData) => {
@@ -35,19 +37,21 @@ class WeatherList extends Component {
 
 	render() {
 		return (
-			<table className="table table-hover">
-				<thead>
+			<div className="weather_list">
+				<table className="table table-hover">
+					<thead>
 					<tr>
 						<th>City</th>
 						<th>Temperature (K)</th>
 						<th>Pressure (hPa)</th>
 						<th>Humidity (%)</th>
 					</tr>
-				</thead>
-				<tbody>
+					</thead>
+					<tbody>
 					{this.props.weather.map(this.renderWeather)}
-				</tbody>
-			</table>
+					</tbody>
+				</table>
+			</div>
 		)
 	}
 }
