@@ -9,6 +9,10 @@
 # production
 /build
 
+# Ignore CSS & Map File
+*.css
+*.map
+
 # misc
 .DS_Store
 .idea/
